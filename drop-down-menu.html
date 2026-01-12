@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Down Menu</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: cursive;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+        header{
+            width: 100%;
+            background-color: #0934D8;
+            box-shadow: 0px 2px 10px 3px #ccc;
+        }
+        header .main{
+            width: 1320px;
+            margin: 0px auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .main nav>ul{
+            display: flex;
+        }
+        header .main nav>ul>li{
+            padding: 30px 30px;
+            font-size: 20px;
+            position: relative;
+        }
+        header .main nav>ul>li>a{
+            color: white;
+        }
+        .subMenu{
+            padding: 5px 0px;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: yellow;
+            display: none;
+        }
+        .main nav>ul>li:hover .subMenu{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="main">
+            <figure>
+                <img src="https://www.wscubetech.com/images/ws-cube-white-logo.svg" alt="" />
+            </figure>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li>
+                        <a href="#">Courses</a>
+                        <ul class="subMenu">
+                            <li>MERN</li>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>DSA</li>
+                            <li>Java Script</li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</body>
+</html>
